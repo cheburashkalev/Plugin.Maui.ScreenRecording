@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ScreenRecorderLib.Levchenko</id>
+    <version>6.5.4</version>
+    <authors>Sverre Kristoffer Skodje</authors>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/sskodje/ScreenRecorderLib</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A .NET library for screen recording in Windows, using Microsoft Media Foundation for realtime encoding to video or image files.</description>
+    <summary />
+    <readme>README.md</readme>
+    <releaseNotes>
+• Fixed bug where monitors with negative coordinates (to the left of main monitor) did not record properly.
+    </releaseNotes>
+    <copyright>Copyright © Sverre Kristoffer Skodje 2025</copyright>
+    <language>en-GB</language>
+    <tags>Screen Recording Windows .NET</tags>
+  </metadata>
+  <files>
+    <file src="ScreenRecorderLib.targets" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib.targets" />
+    <file src="..\ScreenRecorderLib\bin\x64\Release\ScreenRecorderLib.dll" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib.dll" />
+    <file src="..\ScreenRecorderLib\bin\x64\Release\ScreenRecorderLib.xml" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib.xml" />
+    <file src="..\ScreenRecorderLib\bin\x64\Release\ScreenRecorderLib.pdb" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib.pdb" />
+    <!--
+    <file src="..\ScreenRecorderLib\bin\x86\Release\ScreenRecorderLib.dll" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib86.dll" />
+    <file src="..\ScreenRecorderLib\bin\x86\Release\ScreenRecorderLib.xml" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib86.xml" />
+    <file src="..\ScreenRecorderLib\bin\x86\Release\ScreenRecorderLib.pdb" target="lib\net8.0-windows10.0.19041.0\ScreenRecorderLib86.pdb" />-->
+    <file src="LICENSE" target="LICENSE" />
+    <file src="README.md" target="README.md" />
+  </files>
+</package>

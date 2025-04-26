@@ -222,7 +222,7 @@ HRESULT WindowsGraphicsCapture::StartCapture(_In_ RECORDING_SOURCE_BASE &recordi
 			m_session = m_framePool.CreateCaptureSession(m_CaptureItem);
 
 			if (IsGraphicsCaptureIsBorderRequiredPropertyAvailable()) {
-				m_session.IsBorderRequired(recordingSource.IsBorderRequired.value_or(true));
+				//m_session.IsBorderRequired(recordingSource.IsBorderRequired.value_or(true));
 			}
 
 			m_framePool.FrameArrived({ this, &WindowsGraphicsCapture::OnFrameArrived });
