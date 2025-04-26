@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Audio Capture">
+      <UniqueIdentifier>{e6c11f6a-3795-451a-8346-75955fef0070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{986035fd-3a30-45f6-a151-81cb9b444cba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio Capture">
+      <UniqueIdentifier>{86ffebc1-e89c-4403-bcd6-15eba68f6b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{cd219ebc-30b0-418c-ad89-35cb3504eb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video Capture">
+      <UniqueIdentifier>{76e03253-eed9-412d-9886-5ee391fc25ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video Capture\Overlay Capture">
+      <UniqueIdentifier>{54efde93-78da-487a-89f9-61bcfd3429d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video Capture">
+      <UniqueIdentifier>{8e74841b-8de0-49e2-96d6-be25fa5e73d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video Capture\Overlay Capture">
+      <UniqueIdentifier>{487a11ca-9316-4baf-91e6-c29497e8e869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Output">
+      <UniqueIdentifier>{e961d185-4b6f-4ac7-aa65-c0c7836538c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video Capture\Screen Capture">
+      <UniqueIdentifier>{ab624966-984f-4f70-b2d6-6f97b9e7a38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video Capture\Screen Capture\Desktop Duplication">
+      <UniqueIdentifier>{40c9cd37-b2e6-486b-8f0d-07fc35bd2182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video Capture\Screen Capture\Windows Graphics Capture">
+      <UniqueIdentifier>{27c3db9c-28ea-4920-af79-6f2bfc391243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video Capture\Screen Capture">
+      <UniqueIdentifier>{9ef3844d-2669-4c35-80c8-63a2a3fd3ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video Capture\Screen Capture\Desktop Duplication">
+      <UniqueIdentifier>{29441b45-a801-4d72-9359-1697dfbdbcf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video Capture\Screen Capture\Windows Graphics Capture">
+      <UniqueIdentifier>{ffb79b04-1db6-4269-925b-0e02cda62b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Output">
+      <UniqueIdentifier>{8b6d7873-5318-4449-a554-4ab576529af4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RecordingManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WWMFResampler.h">
+      <Filter>Header Files\Audio Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="WASAPICapture.h">
+      <Filter>Header Files\Audio Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="DesktopDuplicationCapture.h">
+      <Filter>Header Files\Video Capture\Screen Capture\Desktop Duplication</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsGraphicsCapture.util.h">
+      <Filter>Header Files\Video Capture\Screen Capture\Windows Graphics Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsGraphicsCapture.h">
+      <Filter>Header Files\Video Capture\Screen Capture\Windows Graphics Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceReaderBase.h">
+      <Filter>Header Files\Video Capture\Overlay Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Screengrab.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="fifo_map.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DX.util.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Cleanup.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCaptureManager.h">
+      <Filter>Header Files\Video Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseManager.h">
+      <Filter>Header Files\Video Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraCapture.h">
+      <Filter>Header Files\Video Capture\Overlay Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoReader.h">
+      <Filter>Header Files\Video Capture\Overlay Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMediaType.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HighresTimer.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MF.util.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GifReader.h">
+      <Filter>Header Files\Video Capture\Overlay Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>Header Files\Audio Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files\Video Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="CMFSinkWriterCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputManager.h">
+      <Filter>Header Files\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptureBase.h">
+      <Filter>Header Files\Video Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCaptureBase.h">
+      <Filter>Header Files\Video Capture\Screen Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageReader.h">
+      <Filter>Header Files\Video Capture\Overlay Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicWait.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreAudio.util.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="WASAPINotify.h">
+      <Filter>Header Files\Audio Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RecordingManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WWMFResampler.cpp">
+      <Filter>Source Files\Audio Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="WASAPICapture.cpp">
+      <Filter>Source Files\Audio Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="DesktopDuplicationCapture.cpp">
+      <Filter>Source Files\Video Capture\Screen Capture\Desktop Duplication</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsGraphicsCapture.cpp">
+      <Filter>Source Files\Video Capture\Screen Capture\Windows Graphics Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceReaderBase.cpp">
+      <Filter>Source Files\Video Capture\Overlay Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="DX.util.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Screengrab.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCaptureManager.cpp">
+      <Filter>Source Files\Video Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseManager.cpp">
+      <Filter>Source Files\Video Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraCapture.cpp">
+      <Filter>Source Files\Video Capture\Overlay Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoReader.cpp">
+      <Filter>Source Files\Video Capture\Overlay Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="HighresTimer.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMediaType.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MF.util.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GifReader.cpp">
+      <Filter>Source Files\Video Capture\Overlay Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Source Files\Audio Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Video Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputManager.cpp">
+      <Filter>Source Files\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageReader.cpp">
+      <Filter>Source Files\Video Capture\Overlay Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureBase.cpp">
+      <Filter>Source Files\Video Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicWait.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsGraphicsCapture.util.cpp">
+      <Filter>Source Files\Video Capture\Screen Capture\Windows Graphics Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreAudio.util.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="WASAPINotify.cpp">
+      <Filter>Source Files\Audio Capture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl" />
+    <FxCompile Include="PixelShader.hlsl" />
+  </ItemGroup>
+</Project>
