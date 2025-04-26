@@ -48,8 +48,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<!--<ProjectReference Include="..\..\src\Plugin.Maui.ScreenRecording\Plugin.Maui.ScreenRecording.csproj" />-->
+		<ProjectReference Include="..\..\src\Plugin.Maui.ScreenRecording\Plugin.Maui.ScreenRecording.csproj" />
 	  <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-	  <PackageReference Include="Plugin.Maui.ScreenRecording" Version="1.0.2" />
 	</ItemGroup>
 </Project>
