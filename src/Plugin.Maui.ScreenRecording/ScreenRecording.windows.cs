@@ -13,7 +13,8 @@ public partial class ScreenRecordingImplementation : IScreenRecording
     private bool _IsRecording { get; set; } = false;
     public bool IsSupported => GraphicsCaptureSession.IsSupported();
     private Recorder? rec;
-
+    private Recorder? rec2;
+    Stream stream = new StreamWrapper();
     public async Task<bool> StartRecording(ScreenRecordingOptions? options)
     {
         if (!IsSupported)
@@ -45,6 +46,8 @@ public partial class ScreenRecordingImplementation : IScreenRecording
 
         };
         rec = Recorder.CreateRecorder(opts);
+        rec2 = Recorder.CreateRecorder(opts);
+        
         rec.OnRecordingComplete += (s, e) =>
         {
             path = e.FilePath;
@@ -52,13 +55,17 @@ public partial class ScreenRecordingImplementation : IScreenRecording
             _IsRecording = false;
         };
         rec.Record(path = savePath);
+        rec2.Record(stream);
         return true;
     }
     private string path { get; set; }
     public async Task<ScreenRecordingFile?> StopRecording()
     {
         rec?.Stop();
+        rec2?.Stop();
         rec?.Dispose();
+        rec2?.Dispose();
+        rec2 = null;
         rec = null;
         return new(path);
     }
